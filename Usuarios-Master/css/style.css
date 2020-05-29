@@ -1,0 +1,63 @@
+h1 {
+    margin-top: 15px !important;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.row-load {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.load-text {
+    color: #444141;
+    font-weight: bold;
+    user-select: none;
+}
+
+.no-select {
+    user-select: none;
+}
+
+.progress {
+    width: 580px !important;
+}
+
+.row-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-field {
+    width: 400px;
+    margin-right: 30px;
+}
+
+.title {
+    font-weight: 500;
+    color: black;
+}
+
+.header-title {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.list-user {
+    height: 360px;
+    overflow: auto;
+}

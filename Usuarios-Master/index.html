@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desafio Módulo 01</title>
+
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+        <div class="container">
+            <div class="section">
+                <div class="row">
+                    <h1 class="header center orange-text">Pesquisa de usuários</h1>
+                </div>
+
+                <div class="row hidden" id="load">
+                    <div class="row-load">
+                        <div class="progress">
+                            <div class="indeterminate"></div>
+                        </div>
+                        <span class="load-text">carregando...</span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <form class="row-form">
+                        <div class="input-field">
+                            <input id="inputUser" type="text" autocomplete="off">
+                            <label for="user">Usuario</label>
+                        </div>
+
+                        <div>
+                            <button id="buttonSearch" class="btn waves-effect waves-light" type="submit">
+                                Pesquisar
+                                <i class="material-icons right">search</i>
+                            </button>
+
+                            <button id="buttonClear" class="btn waves-effect red darken-1" type="button">
+                                Limpar
+                                <i class="material-icons right">clear</i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="row hidden" id="container-list">
+                    <div class="col s6">
+                        <h6 class="header-title no-select" id="listUsersTitle"></h6>
+                        <div class="list-user">
+                            <ul class="collection" id="listUsers">
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col s6">
+                        <h6 class="header-title no-select" id="statisticTitle"></h6>
+                        <div class="list-user">
+                            <p id="sexo-f"></p>
+                            <p id="sexo-m"></p>
+                            <p id="soma-idade"></p>
+                            <p id="media-idade"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./js/script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </body>
+</html>
